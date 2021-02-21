@@ -1,0 +1,12 @@
+<!--components/Collapse/Collapse.wxml-->
+<view class="component">
+	<view class="collapse {{collapseShow==true?'':'hidden'}}" style="height:{{height}};min-height:{{collapseHeight}}px;">
+		<view id="label" class="label" bindtap="collapseChange">
+			<slot class="slot" name="label"></slot>
+			<i wx:if="{{hideArrow!==true}}" class="arrow {{collapseShow==true?'arrow-bottom':'arrow-right'}}"></i>
+		</view>
+		<view class="content" id="content">
+			<slot name="content"></slot>
+		</view>
+	</view>
+</view>

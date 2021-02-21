@@ -1,0 +1,28 @@
+/* components/ExampleHeader/ExampleHeader.wxss */
+.component{
+  font-weight: 500;
+  margin: 60rpx 0 20rpx;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.component::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2rpx;
+  background: #eee;
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+}
+
+.component .example-header{
+  display: inline-block;
+  background: #fff;
+  padding: 0 10rpx 0 36rpx;
+  position: relative;
+  margin-left: 60rpx;
+  font-size: 28rpx;
+}

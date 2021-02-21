@@ -1,0 +1,119 @@
+/* components/Collapse/Collapse.wxss */
+.component{
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.collapse{
+  position: relative;
+  width: 100%;
+  float: left;
+  transition: all 0.2s;
+  overflow: hidden;
+  z-index: 77;
+  /* max-height: 10000rpx; */
+}
+
+.collapse .label::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 2rpx;
+  background: #e0e0e0;
+}
+
+/* .collapse .label::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2rpx;
+  background: #e0e0e0;
+} */
+
+.collapse .label{
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 84rpx;
+  padding: 0 5%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.collapse .content{
+  position: relative;
+  width: 100%;
+  float: left;
+  min-height: 100rpx;
+  padding: 20rpx 5%;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.collapse .label text{
+  position: relative;
+  display: inline-block;
+  margin-top: 42rpx;
+  transform: translateY(-50%);
+  font-size: 26rpx;
+  color: #666;
+}
+
+.collapse .label view{
+  position: relative;
+  display: inline-block;
+  margin-top: 42rpx;
+  transform: translateY(-50%);
+  font-size: 26rpx;
+  color: #666;
+}
+
+.collapse .content text{
+  position: relative;
+  width: 100%;
+  float: left;
+  line-height: 46rpx;
+  font-size: 28rpx;
+  color: #515a6e;
+}
+
+/******************  **   隐藏状态   **  ******************/
+
+.collapse.hidden{
+  height: 84rpx !important;
+  /* max-height: 84rpx !important; */
+  min-height:84rpx !important;
+}
+
+.collapse.hidden .label::after{
+  display: none !important;
+}
+
+/******************  **   方向光标   **  ******************/
+
+.arrow {
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 3rpx solid #666;
+  border-right: 3rpx solid #666;
+  position: absolute;
+  right: 36rpx;
+  top: 32rpx;
+  font-weight: 550;
+  transition: all 0.2s;
+}
+
+.arrow-right {
+  transform: rotate(45deg);
+}
+.arrow-bottom {
+  transform: rotate(135deg);
+}

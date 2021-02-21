@@ -1,0 +1,103 @@
+<!--pages/Collapse/Collapse.wxml-->
+<L-Header>基础用法 #</L-Header>
+<text class="hint">默认可以同时展开多个面板，可以设置默认展开第几个</text>
+
+<L-Collapse value="{{value}}">
+	<Collapse>
+		<text slot="label">Java</text>
+		<text slot="content">Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程</text>
+	</Collapse>
+	<Collapse>
+    <view slot="label">PHP</view>
+		<text slot="content">HP（Hypertext Preprocessor）即“超文本预处理器”，是在服务器端执行的脚本语言，尤其适用于Web开发并可嵌入HTML中。PHP语法利用了C、Java和Perl，该语言的主要目标是允许web开发人员快速编写动态网页。</text>
+	</Collapse>
+	<Collapse>
+    <view slot="label">c语言</view>
+		<text slot="content">C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。C语言是仅产生少量的机器语言以及不需要任何运行环境支持便能运行的高效率程序设计语言。尽管C语言提供了许多低级处理的功能，但仍然保持着跨平台的特性，以一个标准规格写出的C语言程序可在包括类似嵌入式处理器以及超级计算机等作业平台的许多计算机平台上进行编译。</text>
+	</Collapse>
+</L-Collapse>
+
+<L-Header>简洁模式 #</L-Header>
+<text class="hint">设置属性 simple 可以显示为不带边框和背景色的简洁模式</text>
+
+<L-Collapse simple="true">
+	<Collapse>
+		<text slot="label">Java</text>
+		<text slot="content">Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程</text>
+	</Collapse>
+	<Collapse>
+    <view slot="label">PHP</view>
+		<text slot="content">HP（Hypertext Preprocessor）即“超文本预处理器”，是在服务器端执行的脚本语言，尤其适用于Web开发并可嵌入HTML中。PHP语法利用了C、Java和Perl，该语言的主要目标是允许web开发人员快速编写动态网页。</text>
+	</Collapse>
+	<Collapse>
+    <view slot="label">c语言</view>
+		<text slot="content">C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。C语言是仅产生少量的机器语言以及不需要任何运行环境支持便能运行的高效率程序设计语言。尽管C语言提供了许多低级处理的功能，但仍然保持着跨平台的特性，以一个标准规格写出的C语言程序可在包括类似嵌入式处理器以及超级计算机等作业平台的许多计算机平台上进行编译。</text>
+	</Collapse>
+</L-Collapse>
+
+<L-Header>手风琴 #</L-Header>
+<text class="hint">通过设置属性accordion开启手风琴模式，每次只能打开一个面板</text>
+
+<L-Collapse accordion="true" value="{{value2}}">
+	<Collapse>
+		<text slot="label">Java</text>
+		<text slot="content">Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程</text>
+	</Collapse>
+	<Collapse>
+    <view slot="label">PHP</view>
+		<text slot="content">HP（Hypertext Preprocessor）即“超文本预处理器”，是在服务器端执行的脚本语言，尤其适用于Web开发并可嵌入HTML中。PHP语法利用了C、Java和Perl，该语言的主要目标是允许web开发人员快速编写动态网页。</text>
+	</Collapse>
+	<Collapse>
+    <view slot="label">c语言</view>
+		<text slot="content">C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。C语言是仅产生少量的机器语言以及不需要任何运行环境支持便能运行的高效率程序设计语言。尽管C语言提供了许多低级处理的功能，但仍然保持着跨平台的特性，以一个标准规格写出的C语言程序可在包括类似嵌入式处理器以及超级计算机等作业平台的许多计算机平台上进行编译。</text>
+	</Collapse>
+</L-Collapse>
+
+<L-Header>面板嵌套 #</L-Header>
+<text class="hint">折叠面板可以进行嵌套</text>
+<L-Collapse value="{{value}}">
+	<Collapse>
+		<text slot="label">分类一</text>
+		<view slot="content">
+			<L-Collapse value="{{value}}">
+				<Collapse>
+					<text slot="label">Java</text>
+					<text slot="content">Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程</text>
+				</Collapse>
+				<Collapse>
+					<view slot="label">PHP</view>
+					<text slot="content">HP（Hypertext Preprocessor）即“超文本预处理器”，是在服务器端执行的脚本语言，尤其适用于Web开发并可嵌入HTML中。PHP语法利用了C、Java和Perl，该语言的主要目标是允许web开发人员快速编写动态网页。</text>
+				</Collapse>
+				<Collapse>
+					<view slot="label">c语言</view>
+					<text slot="content">C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。C语言是仅产生少量的机器语言以及不需要任何运行环境支持便能运行的高效率程序设计语言。尽管C语言提供了许多低级处理的功能，但仍然保持着跨平台的特性，以一个标准规格写出的C语言程序可在包括类似嵌入式处理器以及超级计算机等作业平台的许多计算机平台上进行编译。</text>
+				</Collapse>
+			</L-Collapse>
+		</view>
+	</Collapse>
+	<Collapse>
+    <view slot="label">分类二</view>
+		<text slot="content">分类二内容</text>
+	</Collapse>
+	<Collapse hideArrow="true">
+    <view slot="label">分类三</view>
+		<text slot="content">分类三内容</text>
+	</Collapse>
+</L-Collapse>
+
+<L-Header>方法 #</L-Header>
+<text class="hint">通过 bind:change 获取到当前点击</text>
+<L-Collapse value="{{value}}" bind:change="getCollapseChange">
+	<Collapse>
+		<text slot="label">Java</text>
+		<text slot="content">Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程</text>
+	</Collapse>
+	<Collapse>
+    <view slot="label">PHP</view>
+		<text slot="content">HP（Hypertext Preprocessor）即“超文本预处理器”，是在服务器端执行的脚本语言，尤其适用于Web开发并可嵌入HTML中。PHP语法利用了C、Java和Perl，该语言的主要目标是允许web开发人员快速编写动态网页。</text>
+	</Collapse>
+	<Collapse>
+    <view slot="label">c语言</view>
+		<text slot="content">C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。C语言是仅产生少量的机器语言以及不需要任何运行环境支持便能运行的高效率程序设计语言。尽管C语言提供了许多低级处理的功能，但仍然保持着跨平台的特性，以一个标准规格写出的C语言程序可在包括类似嵌入式处理器以及超级计算机等作业平台的许多计算机平台上进行编译。</text>
+	</Collapse>
+</L-Collapse>

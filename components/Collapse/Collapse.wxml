@@ -1,0 +1,6 @@
+<!--components/Collapse/Collapse.wxml-->
+<view class="component">
+  <view class="collapsePanel {{simple==true?'':'border'}}">
+    <slot></slot>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--components/ExampleHeader/ExampleHeader.wxml-->
+<view class="component">
+  <text class="example-header">
+    <slot></slot>
+  </text>
+</view>
