@@ -1,0 +1,7 @@
+<!--components/Icon.wxml-->
+<view class="component">
+  <text class="iconfont {{label}} {{type}}" style="color:{{color}}; font-size:{{size}}rpx"></text>
+  <view class="text {{type}}">
+    <slot></slot>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+var optimize = function (code) {
+  var f = true;
+  // var keyword = '> '
+  // while (f) {
+  //   // 找到当前位置
+  //   var position = str.indexOf(keyword);
+  //   if (position == -1) {
+  //     // 未匹配到关键字
+  //     f = false;
+  //     return str;
+  //   } else {
+  //     // 匹配位置+关键字长度
+  //     var matchEnd = position + keyword.length;
+  //     // 非匹配中的关键字
+  //     arr.push(str.substring(0, position));
+  //     // 匹配中的关键字
+  //     var strKey = '<p style="display:inline-block;color:' + col + ';">' + str.substring(position, matchEnd) + '</p>';
+  //     arr.push(strKey);
+  //     // 去掉匹配到文字，重新进行筛选
+  //     str = str.substring(matchEnd, str.length);
+  //     // 匹配到了末尾，不再继续匹配
+  //     if (!str && str.length < 1) {
+  //       var s = arr.join('');
+  //       str = s;
+  //       f = false;
+  //       if (i == keyword.length) {
+  //         t = false;
+  //       }
+  //       return str;
+  //     }
+  //   }
+  // }
+}
+
+module.exports = {
+  optimize: optimize,
+}

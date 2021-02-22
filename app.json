@@ -2,7 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
+    "pages/Icon/Icon",
     "pages/Collapse/Collapse"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,8 +15,11 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "L-Header": "../../components/ExampleHeader/ExampleHeader",
-    "L-Collapse":"../../components/Collapse/Collapse",
-    "Collapse":"../../components/CollapseContent/CollapseContent"
+    "L-Header": "/components/ExampleHeader/ExampleHeader",
+    "L-Icon": "/components/Icon/Icon",
+    "L-Pre": "/components/Pre/Pre",
+    "L-Code": "/components/Code/Code",
+    "L-Collapse":"/components/Collapse/Collapse",
+    "Collapse":"/components/CollapseContent/CollapseContent"
   }
 }

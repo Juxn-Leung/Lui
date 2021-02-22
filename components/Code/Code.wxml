@@ -1,0 +1,6 @@
+<!--components/Code/Code.wxml-->
+<wxs src="../../wxs/code.wxs" module="optimize"></wxs>
+<view class="component">
+  <text class="code" nodes="{{optimize.optimize(code)}}"></text>
+  <L-Icon class="icon" label="iconfuzhi" color="#b2b2b2"></L-Icon>
+</view>

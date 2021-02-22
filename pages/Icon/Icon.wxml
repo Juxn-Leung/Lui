@@ -1,0 +1,38 @@
+<!--pages/Icon/Icon.wxml-->
+<L-Header>基础用法 #</L-Header>
+<text class="hint">默认图标在文字左边</text>
+
+<L-Icon label="iconanzhuo1">安卓</L-Icon>
+<L-Icon label="iconanzhuo">苹果</L-Icon>
+
+<L-Header>图标方位 #</L-Header>
+<text class="hint">通过设置 type 改变图标方位</text>
+
+<text class="label">图标在上面</text>
+<L-Icon label="iconanzhuo" type="top">苹果</L-Icon>
+<text class="label">图标在右侧</text>
+<L-Icon label="iconanzhuo1" type="right">安卓</L-Icon>
+
+<L-Header>图标颜色 #</L-Header>
+<text class="hint">通过设置 color 改变图标颜色</text>
+
+<text class="label">color="#00b26a"</text>
+<L-Icon label="iconanzhuo1" color="#00b26a">安卓</L-Icon>
+
+<text class="label">color="black"</text>
+<L-Icon label="iconanzhuo" color="black">苹果</L-Icon>
+
+<L-Header>图标大小 #</L-Header>
+<text class="hint">通过设置 size 改变图标大小 (单位rpx,1px==2rpx)</text>
+
+<text class="label">size="40"</text>
+<L-Icon label="iconanzhuo1" size="40">安卓</L-Icon>
+
+<text class="label">size="28"</text>
+<L-Icon label="iconanzhuo" size="28">苹果</L-Icon>
+
+
+<L-Header>嵌套自定义文字 #</L-Header>
+<text class="hint">把 带样式的text 标签 放到 L-Icon标签中</text>
+
+<L-Pre code="`<L-Icon label='iconanzhuo'> <text>苹果</text> </L-Icon>`"></L-Pre>

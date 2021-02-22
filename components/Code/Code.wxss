@@ -1,0 +1,24 @@
+/* components/Code/Code.wxss */
+.component{
+  position: relative;
+  float: left;
+  width: 100%;
+  display: inline-block;
+}
+
+.component .code{
+  position: relative;
+  width: 100%;
+  padding-right: 60rpx;
+  float: left;
+  min-height: 32rpx;
+  font-size: 28rpx;
+  color: #42b983;
+  box-sizing: border-box;
+}
+
+.component .icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+}

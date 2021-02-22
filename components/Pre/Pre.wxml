@@ -1,0 +1,4 @@
+<!--components/Pre/Pre.wxml-->
+<view class="component">
+  <L-Code code="{{code}}"></L-Code>
+</view>

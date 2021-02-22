@@ -1,0 +1,42 @@
+/* components/Icon.wxss */
+@import "/assest/css/iconfont.wxss";
+
+.component{
+  position: relative;
+  float: left;
+  display: inline-block;
+}
+
+.component .iconfont{
+  position: relative;
+  float: left;
+}
+
+.component .text{
+  position: relative;
+  float: left;
+  display: inline-block;
+  margin: 0 4rpx;
+  color: #5c6b77;
+  font-size: 32rpx;
+  line-height: 32rpx;
+}
+
+
+/******************  **   图标在右侧   **  ******************/
+.component .iconfont.right{
+  float: right !important;
+}
+
+
+/******************  **   图标在上侧   **  ******************/
+.component .iconfont.top{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.component .text.top{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}

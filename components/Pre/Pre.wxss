@@ -1,0 +1,10 @@
+/* components/Pre/Pre.wxss */
+.component{
+  position: relative;
+  float: left;
+  width: 100%;
+  display: inline-block;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #f7f7f7;
+}

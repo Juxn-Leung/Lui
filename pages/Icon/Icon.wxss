@@ -1,0 +1,25 @@
+/* pages/Icon/Icon.wxss */
+page{
+  padding: 20rpx 20rpx 40rpx 20rpx;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+}
+
+.hint{
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 24rpx;
+  margin-bottom: 40rpx;
+  color: #666;
+}
+
+.label{
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 24rpx;
+  margin: 30rpx 0;
+  color: #515a6e;
+}
