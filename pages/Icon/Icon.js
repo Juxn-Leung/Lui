@@ -1,11 +1,12 @@
 // pages/Icon/Icon.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    code:''
   },
 
   /**
@@ -26,7 +27,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    // let rep = "<L-Icon label='iconanzhuo'><text>苹果</text></L-Icon>";
+    let rep = `<pre class="line-numbers">
+        <code class="language-HTML">
+          <p>123456</p>
+        </code>
+      </pre>`
 
+    this.setData({
+      code:`<p>123456</p>`
+    })
   },
 
   /**

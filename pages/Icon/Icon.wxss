@@ -23,3 +23,10 @@ page{
   margin: 30rpx 0;
   color: #515a6e;
 }
+.line,
+.line-numbers{
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
