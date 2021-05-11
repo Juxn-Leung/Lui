@@ -15,7 +15,6 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "mp-html": "/components/mp-html/index",
     "L-Header": "/components/ExampleHeader/ExampleHeader",
     "L-Icon": "/components/Icon/Icon",
     "L-Pre": "/components/Pre/Pre",

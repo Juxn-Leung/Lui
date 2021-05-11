@@ -1,4 +1,5 @@
 <!--pages/Icon/Icon.wxml-->
+
 <L-Header>基础用法 #</L-Header>
 <text class="hint">默认图标在文字左边</text>
 
@@ -34,15 +35,3 @@
 
 <L-Header>嵌套自定义文字 #</L-Header>
 <text class="hint">把 带样式的text 标签 放到 L-Icon标签中</text>
-
-<L-Pre code="`<L-Icon label='iconanzhuo'> <text>苹果</text> </L-Icon>`"></L-Pre>
-
-<pre class="line-numbers">
-    <code class="language-css">
-      p{
-        color:#000;
-      }
-    </code>
-</pre>
-
-<!-- <rich-text class="line" nodes="{{code}}"></rich-text> -->
